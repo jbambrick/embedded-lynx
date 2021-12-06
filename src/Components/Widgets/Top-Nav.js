@@ -8,13 +8,13 @@ import { NavLink } from "react-router-dom";
 
 function TopNav() {
   return (
-    <CssBaseline>
+    <Typography>
       <AppBar className="TopNav" position="sticky">
         <nav>
           <div>Embedded Lynx 2021</div>
         </nav>
       </AppBar>
-    </CssBaseline>
+    </Typography>
   );
 }
 

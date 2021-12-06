@@ -14,7 +14,7 @@ function App() {
     <div className="layout">
       <TopNav />
       <Navbar />
-      <main>
+      <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" exact element={<About />} />

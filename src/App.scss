@@ -4,17 +4,18 @@
 //   }
 // }
 
-.layout {
-  margin: 0px;
-  padding: 0px;
+.main {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.TopNav {
-  color: green;
+.layout {
+  margin: 0px;
 }
 
 .logo {
   color: white;
+  position: absolute;
 }
 
 * {
@@ -27,9 +28,38 @@ nav {
   background: black;
 }
 
+.buttons {
+  display: inline-block;
+}
+
+.navlinks,
+nav {
+  color: white;
+}
+
 .App-header {
-  background: linear-gradient(217deg, rgb(187, 11, 11), rgb(92, 0, 0));
+  background: linear-gradient(217deg, rgb(0, 0, 0), rgb(255, 123, 0));
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 5px;
+  padding: 0px;
+  box-shadow: 10px 20px 20px black;
+}
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 123, 0);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 123, 0, 0.582);
 }

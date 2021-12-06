@@ -38,19 +38,28 @@ function Navbar() {
                 Logo
               </NavLink>
             </Button>
-
-            <Button variant="contained">
-              <NavLink to="/">Home</NavLink>
-            </Button>
-            <Button variant="contained">
-              <NavLink to="/About">About</NavLink>
-            </Button>
-            <Button variant="contained">
-              <NavLink to="/Projects">Projects</NavLink>
-            </Button>
-            <Button variant="contained">
-              <NavLink to="/Links">Links</NavLink>
-            </Button>
+            <div class="buttons">
+              <Button variant="text">
+                <NavLink class="navlinks" to="/">
+                  Home
+                </NavLink>
+              </Button>
+              <Button variant="text">
+                <NavLink class="navlinks" to="/About">
+                  About
+                </NavLink>
+              </Button>
+              <Button variant="text">
+                <NavLink class="navlinks" to="/Projects">
+                  Projects
+                </NavLink>
+              </Button>
+              <Button variant="text">
+                <NavLink class="navlinks" to="/Links">
+                  Links
+                </NavLink>
+              </Button>
+            </div>
           </Typography>
         </Toolbar>
       </AppBar>

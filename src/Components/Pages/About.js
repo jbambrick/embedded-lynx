@@ -7,7 +7,21 @@ const About = () => {
       <h2>About page works!</h2>
       <h2>About page works!</h2>
       <h2>About page works!</h2>
-      <h2>About page works!</h2>v
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
+      <h2>About page works!</h2>
     </div>
   );
 };
