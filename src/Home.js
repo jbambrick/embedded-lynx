@@ -13,13 +13,13 @@ const Home = () => {
             <div className="backdrop">
               <div className="card-child">
                 <h1>
-                  <section>Embedded Lynx</section>
+                  <section>Design. Create. Implement.</section>
                 </h1>
-                <h2>Design. Create. Implement.</h2>
+
                 <Button
                   className="contactButton"
                   variant="contained"
-                  style={{ backgroundColor: "red" }}
+                  style={{ backgroundColor: "rgba(255, 0, 0, 0.918)" }}
                 >
                   <NavLink className="contact" to="/Contact">
                     Contact

@@ -35,7 +35,7 @@
 }
 
 .navlinks {
-  color: rgba(252, 252, 252, 0.9);
+  color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -74,9 +74,6 @@ nav {
   background-position: top;
 }
 
-.nav.active {
-  background: green;
-}
 /* Designing for scroll-bar */
 ::-webkit-scrollbar {
   width: 16px;
@@ -117,8 +114,11 @@ nav {
     text-shadow: 1px 5px 5px black;
     margin: 0;
   }
-  h2 {
-    margin-bottom: 5px;
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    margin: 8px;
   }
 }
 
@@ -148,7 +148,7 @@ nav {
 }
 
 .nav-logo {
-  color: rgb(255, 0, 0);
+  color: rgba(255, 0, 0, 0.918);
 }
 
 .container {
@@ -156,21 +156,16 @@ nav {
   padding: 0;
 }
 
-h2 {
-  padding-bottom: 5px;
-}
-
 .page {
   padding: 25px;
 }
 
-h1 {
-  font-size: 40px;
-}
-
 .contact {
-  padding: 5px;
+  padding: 0px;
   margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
 }
 
 @-moz-document url-prefix() {
