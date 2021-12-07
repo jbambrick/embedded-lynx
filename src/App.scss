@@ -29,11 +29,11 @@
   z-index: 10;
   text-align: center;
 }
-.logo {
-  height: 100%;
-  text-align: left;
-  margin: auto;
+
+.contact {
+  color: black;
 }
+
 .navlinks {
   color: rgba(252, 252, 252, 0.9);
   display: flex;
@@ -67,16 +67,11 @@ nav {
 .App-header {
   background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718.jpeg);
   font-size: calc(10px + 2vmin);
-  color: white;
   padding: 0px;
-  box-shadow: 10px 20px 20px black;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
-  .App-header.active {
-    background: red;
-  }
 }
 
 .nav.active {
@@ -117,8 +112,13 @@ nav {
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
-  h1 {
+  h1,
+  h2 {
     text-shadow: 1px 5px 5px black;
+    margin: 0;
+  }
+  h2 {
+    margin-bottom: 5px;
   }
 }
 
@@ -131,8 +131,8 @@ nav {
 }
 
 .nav-backdrop {
-  -webkit-backdrop-filter: brightness(75%);
-  backdrop-filter: brightness(75%);
+  -webkit-backdrop-filter: brightness(65%);
+  backdrop-filter: brightness(65%);
   height: 80px;
   width: 100%;
   display: block;
@@ -147,9 +147,17 @@ nav {
   color: rgb(228, 228, 228);
 }
 
+.nav-logo {
+  color: rgb(255, 0, 0);
+}
+
 .container {
   margin: auto 0;
   padding: 0;
+}
+
+h2 {
+  padding-bottom: 5px;
 }
 
 .page {
@@ -160,10 +168,14 @@ h1 {
   font-size: 40px;
 }
 
-.contactButton {
-  padding: 95px;
+.contact {
+  padding: 5px;
+  margin: 0;
 }
 
-Appbar.active {
-  background: green;
+@-moz-document url-prefix() {
+  .nav-backdrop,
+  .backdrop {
+    background: rgba(0, 0, 0, 0.404);
+  }
 }

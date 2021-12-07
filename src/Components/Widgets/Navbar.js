@@ -20,28 +20,20 @@ function Navbar() {
                 component="div"
                 sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
               >
-                <Button className="logo">
-                  <NavLink className="logo" to="/">
+                <Button>
+                  <NavLink className="nav-logo" to="/">
                     Logo
                   </NavLink>
                 </Button>
 
                 <div className="buttons">
-                  <Button className="navlinks" variant="text">
+                  <Button variant="text">
                     <NavLink className="navlinks" to="/">
                       Home
                     </NavLink>
                   </Button>
                   <Button variant="text">
-                    <NavLink
-                      className="navlinks"
-                      to="/About"
-                      activeClass="active"
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
-                    >
+                    <NavLink className="navlinks" to="/About">
                       About
                     </NavLink>
                   </Button>

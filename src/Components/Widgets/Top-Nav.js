@@ -7,7 +7,7 @@ function TopNav() {
     <Typography>
       <AppBar className="TopNav" position="sticky">
         <nav>
-          <div>Embedded Lynx 2021</div>
+          <div>© Embedded Lynx 2021</div>
         </nav>
       </AppBar>
     </Typography>

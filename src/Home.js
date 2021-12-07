@@ -2,6 +2,7 @@ import * as React from "react";
 import { Card } from "@mui/material";
 import { Button } from "@mui/material";
 import { Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,13 +12,18 @@ const Home = () => {
           <Card className="card">
             <div className="backdrop">
               <div className="card-child">
-                <h1>Design. Create. Implement.</h1>
+                <h1>
+                  <section>Embedded Lynx</section>
+                </h1>
+                <h2>Design. Create. Implement.</h2>
                 <Button
                   className="contactButton"
                   variant="contained"
                   style={{ backgroundColor: "red" }}
                 >
-                  Contact
+                  <NavLink className="contact" to="/Contact">
+                    Contact
+                  </NavLink>
                 </Button>
               </div>
             </div>
