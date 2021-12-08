@@ -3,11 +3,33 @@ import { Card } from "@mui/material";
 import { Button } from "@mui/material";
 import { Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <Typography>
-      <div className="container">
+      <motion.div
+        initial={{
+          x: -200,
+          y: 0,
+          scale: 1,
+          rotate: 0,
+        }}
+        animate={{
+          x: 0,
+          y: 0,
+          scale: 1,
+          rotate: 0,
+        }}
+        exit={{
+          x: 100,
+          y: 0,
+          scale: 1,
+          rotate: 0,
+        }}
+        transition={{ duration: 0.5 }}
+        className="container"
+      >
         <div className="home">
           <Card className="card">
             <div className="backdrop">
@@ -61,7 +83,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Typography>
   );
 };

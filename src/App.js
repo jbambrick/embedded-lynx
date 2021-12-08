@@ -9,17 +9,24 @@ import Contact from "./Components/Pages/Contact";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router";
 import TopNav from "./Components/Widgets/Top-Nav";
-import { CSSTransition } from "react-transition-group";
 import { TransitionGroup } from "react-transition-group";
+import { AnimatePresence, motion } from "framer-motion";
+import { useLocation } from "react-router";
 
 function App() {
+  const location = useLocation();
   return (
-    <div className="layout">
+    <motion.div
+      className="layout"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <TopNav />
       <Navbar />
-      <main className="main">
-        <TransitionGroup>
-          <CSSTransition timeout={300} classNames="slide">
+      <AnimatePresence exitBeforeEnter>
+        <main className="main">
+          <TransitionGroup>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/About" exact element={<About />} />
@@ -27,10 +34,10 @@ function App() {
               <Route path="/Links" exact element={<Links />} />
               <Route path="/Contact" exact element={<Contact />} />
             </Routes>
-          </CSSTransition>
-        </TransitionGroup>
-      </main>
-    </div>
+          </TransitionGroup>
+        </main>
+      </AnimatePresence>
+    </motion.div>
   );
 }
 

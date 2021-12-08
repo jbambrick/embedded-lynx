@@ -64,7 +64,7 @@ nav {
   height: 100%;
 }
 
-.App-header {
+.navbar {
   background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718.jpeg);
   font-size: calc(10px + 2vmin);
   padding: 0px;
@@ -102,7 +102,7 @@ nav {
   text-align: center;
   width: 100vw;
   margin: auto;
-  height: 60vh;
+  height: 70vh;
   position: relative;
   background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718.jpeg);
   background-repeat: no-repeat;
@@ -125,7 +125,7 @@ nav {
 .backdrop {
   -webkit-backdrop-filter: brightness(75%);
   backdrop-filter: brightness(75%);
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   display: block;
 }
@@ -147,8 +147,13 @@ nav {
   color: rgb(228, 228, 228);
 }
 
-.nav-logo {
-  color: rgba(255, 0, 0, 0.918);
+.logo {
+  color: white;
+}
+
+.logo.actives {
+  color: fuchsia;
+  transition: 2s ease;
 }
 
 .container {
@@ -173,4 +178,8 @@ nav {
   .backdrop {
     background: rgba(0, 0, 0, 0.404);
   }
+}
+
+.navbar.active {
+  background: rgb(0, 0, 0);
 }

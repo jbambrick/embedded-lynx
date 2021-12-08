@@ -1,6 +1,29 @@
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
-    <div className="about">
+    <motion.div
+      initial={{
+        x: -200,
+        y: 0,
+        scale: 1,
+        rotate: 0,
+      }}
+      animate={{
+        x: 0,
+        y: 0,
+        scale: 1,
+        rotate: 0,
+      }}
+      exit={{
+        x: 100,
+        y: 0,
+        scale: 1,
+        rotate: 0,
+      }}
+      transition={{ duration: 0.5 }}
+      className="about"
+    >
       <h2>About page works!</h2>
       <h2>About page works!</h2>
       <h2>About page works!</h2>
@@ -22,7 +45,7 @@ const About = () => {
       <h2>About page works!</h2>
       <h2>About page works!</h2>
       <h2>About page works!</h2>
-    </div>
+    </motion.div>
   );
 };
 
