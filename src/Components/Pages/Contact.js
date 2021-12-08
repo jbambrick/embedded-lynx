@@ -22,7 +22,7 @@ const Contact = () => {
         rotate: 0,
       }}
       transition={{ duration: 0.5 }}
-      className="contact-page"
+      className="page"
     >
       <h2>Contact page works!</h2>
     </motion.div>

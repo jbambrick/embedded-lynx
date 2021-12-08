@@ -11,10 +11,8 @@ import { Route } from "react-router";
 import TopNav from "./Components/Widgets/Top-Nav";
 import { TransitionGroup } from "react-transition-group";
 import { AnimatePresence, motion } from "framer-motion";
-import { useLocation } from "react-router";
 
 function App() {
-  const location = useLocation();
   return (
     <motion.div
       className="layout"
