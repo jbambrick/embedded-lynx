@@ -57,6 +57,10 @@ nav {
   padding-left: 15px;
   padding-top: 1px;
   padding-bottom: 1px;
+  transition: scroll height 3s ease-in;
+  &.active{
+    transition: trigger scroll height 3s ease-out
+  }
 }
 
 .buttons {
@@ -65,13 +69,9 @@ nav {
 }
 
 .navbar {
-  background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718.jpeg);
   font-size: calc(10px + 2vmin);
   padding: 0px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
+  background: url(https://www.publicdomainpictures.net/pictures/130000/velka/pink-side-gradient-background.jpg);
 }
 
 /* Designing for scroll-bar */
@@ -86,7 +86,7 @@ nav {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 13, 0, 0.582);
+  background: rgba(255, 13, 0, 0.8);
 }
 
 /* Handle on hover */
@@ -104,11 +104,11 @@ nav {
   margin: auto;
   height: 70vh;
   position: relative;
-  background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718.jpeg);
+  background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
+ // background-attachment: fixed; this doesn't allow animation to render correctly
+ background-size: 100vw;
+ // background-position: bottom;
   h1,
   h2 {
     text-shadow: 1px 5px 5px black;
@@ -130,14 +130,6 @@ nav {
   display: block;
 }
 
-.nav-backdrop {
-  -webkit-backdrop-filter: brightness(65%);
-  backdrop-filter: brightness(65%);
-  height: 80px;
-  width: 100%;
-  display: block;
-}
-
 .card-child {
   position: absolute;
   top: 50%;
@@ -145,6 +137,9 @@ nav {
   transform: translate(-50%, -50%);
   height: 200px;
   color: rgb(228, 228, 228);
+  button {
+    box-shadow: 0px 2px 5px black
+  };
 }
 
 .logo {
@@ -174,12 +169,17 @@ nav {
 }
 
 @-moz-document url-prefix() {
-  .nav-backdrop,
+
   .backdrop {
     background: rgba(0, 0, 0, 0.404);
   }
 }
 
 .navbar.active {
-  background: rgb(0, 0, 0);
+  background: black;
+
+.navlinks{
+  color:rgb(216, 0, 216);
 }
+  }
+

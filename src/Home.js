@@ -10,7 +10,7 @@ const Home = () => {
     <Typography>
       <motion.div
         initial={{
-          x: -200,
+          x: -100,
           y: 0,
           scale: 1,
           rotate: 0,
@@ -22,13 +22,13 @@ const Home = () => {
           rotate: 0,
         }}
         exit={{
-          x: 100,
+          x: 0,
           y: 0,
           scale: 1,
           rotate: 0,
         }}
         transition={{ duration: 0.5 }}
-        className="container"
+
       >
         <div className="home">
           <Card className="card">
@@ -38,15 +38,18 @@ const Home = () => {
                   <section>Design. Create. Implement.</section>
                 </h1>
 
-                <Button
+                <motion.button
+                  whileHover={{scale:1.1,transition: {duration: 0.5}}}
+                  whileTap={{ scale: 0.95 }}
                   className="contactButton"
                   variant="contained"
-                  style={{ backgroundColor: "rgba(255, 0, 0, 0.918)" }}
+                  style={{ backgroundColor: "rgb(216, 0, 216)", width: '120px',height: '60px', borderRadius: '18px', borderStyle: 'none' }}
                 >
                   <NavLink className="contact" to="/Contact">
                     Contact
                   </NavLink>
-                </Button>
+                </motion.button>
+   
               </div>
             </div>
           </Card>

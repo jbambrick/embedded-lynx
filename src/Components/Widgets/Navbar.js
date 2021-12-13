@@ -8,6 +8,8 @@ import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { style } from "@mui/system";
+import { green } from "@mui/material/colors";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -18,6 +20,7 @@ function Navbar() {
       setNavbar(false);
     }
   };
+
   const [logo, setLogo] = useState(false);
   const changeLogo = () => {
     if (window.scrollY >= 10) {
@@ -27,13 +30,18 @@ function Navbar() {
     }
   };
 
+  
+
+
   window.addEventListener("scroll", changeBackground);
   window.addEventListener("scroll", changeLogo);
+
 
   return (
     <>
       <CssBaseline>
         <AppBar
+          title="navbarz"
           className={navbar ? "navbar active" : "navbar"}
           position="sticky"
         >
