@@ -3,7 +3,8 @@ import { Card } from "@mui/material";
 import { Button } from "@mui/material";
 import { Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { Opacity } from "@material-ui/icons";
 
 const Home = () => {
   return (
@@ -34,16 +35,22 @@ const Home = () => {
           <Card className="card">
             <div className="backdrop">
               <div className="card-child">
-                <h1>
-                  <section>Design. Create. Implement.</section>
-                </h1>
+                <motion.div
+                  whileHover={{scale:1.1,
+                  transition: {duration: 1}}}
+                  whileTap={{ scale: 0.95 }}>
+                  <h1>
+                    <section>Design. Create. Implement.</section>
+                  </h1>
+                </motion.div>
+
 
                 <motion.button
-                  whileHover={{scale:1.1,transition: {duration: 0.5}}}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{scale:1.2,transition: {duration: 0.5}}}
+                  whileTap={{ scale: 0.98 }}
                   className="contactButton"
                   variant="contained"
-                  style={{ backgroundColor: "rgb(216, 0, 216)", width: '120px',height: '60px', borderRadius: '18px', borderStyle: 'none' }}
+                  style={{ backgroundColor: "rgb(216, 0, 216)", width: '160px',height: '50px', borderRadius: '18px', borderStyle: 'none' }}
                 >
                   <NavLink className="contact" to="/Contact">
                     Contact
