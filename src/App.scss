@@ -1,8 +1,5 @@
-//@media (prefers-reduced-motion: no-preference) {
-//Button {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
+// TODO create component styles
+
 .layout {
   margin: 0px;
   background: black;
@@ -28,6 +25,7 @@
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
   text-align: center;
+  position: fixed;
 }
 
 .contact {
@@ -40,7 +38,8 @@
   align-items: center;
   padding: 0 1rem;
   height: 100%;
-  cursor: crosshair;
+  font-size: larger;
+  cursor: cell;
 
   &.active {
     text-decoration: underline;
@@ -57,57 +56,56 @@ nav {
   padding-left: 15px;
   padding-top: 1px;
   padding-bottom: 1px;
-  transition: scroll height 3s ease-in;
+  font-family: arial;
+  font-size: 14px;
+
   &.active{
-    transition: trigger scroll height 3s ease-out
+    position: relative;
   }
 }
 
 .buttons {
   display: inline-block;
-  height: 100%;
-}
-
-.navbar {
-  font-size: calc(10px + 2vmin);
-  padding: 0px;
-  background: url(https://www.publicdomainpictures.net/pictures/130000/velka/pink-side-gradient-background.jpg);
 }
 
 /* Designing for scroll-bar */
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 18px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(216, 0, 216);
+  background: rgb(194, 5, 147);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(170, 0, 170);
+  background: rgba(194, 5, 147, 0.75);
 }
 
 .home {
   margin: auto;
 }
 
+.navbar {
+  padding: 0px;
+}
+
 .card {
   text-align: center;
   width: 100vw;
   margin: auto;
-  height: 70vh;
+  height: 60vh;
   position: relative;
   background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
   background-repeat: no-repeat;
  // background-attachment: fixed; this doesn't allow animation to render correctly
- background-size: 100vw;
+ background-size: cover;
  // background-position: bottom;
   h1,
   h2 {
@@ -117,15 +115,16 @@ nav {
 
   h1 {
     color: rgb(255, 255, 255);
-    font-size: 42px;
+    font-size: 44px;
     margin: 8px;
+    font-family: arial;
   }
 }
 
 .backdrop {
   -webkit-backdrop-filter: brightness(75%);
   backdrop-filter: brightness(75%);
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
   display: block;
 }
@@ -157,7 +156,11 @@ nav {
 }
 
 .page {
-  padding: 25px;
+  padding-top: 0px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact {
@@ -168,18 +171,21 @@ nav {
   font-size: 24px;
 }
 
-@-moz-document url-prefix() {
 
   .backdrop {
-    background: rgba(0, 0, 0, 0.404);
+    background: linear-gradient(rgba(5, 4, 4, 0.13),rgba(5, 4, 4, 0.33), rgba(5, 4, 4, 0.504), rgba(5, 4, 4, 0.55504), rgba(5, 4, 4, .99));
   }
-}
+
 
 .navbar.active {
   background: black;
-
-.navlinks{
-  color:rgb(216, 0, 216);
 }
-  }
 
+.drawer {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 200px;
+  * {
+    color: white;
+  }
+}

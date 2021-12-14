@@ -1,98 +1,70 @@
-// #TODO change logo size when navbar state is changed
+import React from "react";
+import {
+  AppBar,
+  Toolbar,
+  CssBaseline,
+  Typography,
+  makeStyles,
+  useTheme,
+  useMediaQuery,
+} from "@material-ui/core";
+import { Link } from "react-router-dom";
+import DrawerComponent from "./Drawer.js";
 
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import { CssBaseline } from "@material-ui/core";
-import Typography from "@mui/material/Typography";
-import { Button } from "@mui/material";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
-import { style } from "@mui/system";
-import { green } from "@mui/material/colors";
+const useStyles = makeStyles((theme) => ({
+
+  logo: {
+    flexGrow: "1",
+    cursor: 'crosshair',
+
+  },
+  link: {
+    textDecoration: "none",
+    color: "white",
+
+    marginLeft: theme.spacing(12),
+    "&:hover": {
+      color: "rgb(194, 5, 147)",
+      borderBottom: "1px solid rgb(216, 0, 216)",
+    },
+  },
+}));
 
 function Navbar() {
-  const [navbar, setNavbar] = useState(false);
-  const changeBackground = () => {
-    if (window.scrollY >= 30) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-
-  const [logo, setLogo] = useState(false);
-  const changeLogo = () => {
-    if (window.scrollY >= 10) {
-      setLogo(true);
-    } else {
-      setLogo(false);
-    }
-  };
-
-  
-
-
-  window.addEventListener("scroll", changeBackground);
-  window.addEventListener("scroll", changeLogo);
-
+  const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
   return (
-    <>
-      <CssBaseline>
-        <AppBar
-          title="navbarz"
-          className={navbar ? "navbar active" : "navbar"}
-          position="sticky"
-        >
-          <div className="nav-backdrop">
-            <Toolbar className="toolbar">
-              <Typography
-                variant="h4"
-                noWrap
-                component="div"
-                sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-              >
-                <Button>
-                  <NavLink className={logo ? "logo actives" : "logo"} to="/">
-                    Logo
-                  </NavLink>
-                </Button>
+    <AppBar position="sticky" style={{ background: 'rgb(194, 5, 147)'}}>
+      <CssBaseline />
+      <Toolbar >
 
-                <div className="buttons">
-                  <Button variant="text">
-                    <NavLink className="navlinks" to="/">
-                      Home
-                    </NavLink>
-                  </Button>
-                  <Button variant="text">
-                    <NavLink className="navlinks" to="/About">
-                      About
-                    </NavLink>
-                  </Button>
-                  <Button variant="text">
-                    <NavLink className="navlinks" to="/Projects">
-                      Projects
-                    </NavLink>
-                  </Button>
-                  <Button variant="text">
-                    <NavLink className="navlinks" to="/Links">
-                      Links
-                    </NavLink>
-                  </Button>
-                  <Button>
-                    <NavLink className="navlinks" to="/Contact">
-                      Contact
-                    </NavLink>
-                  </Button>
-                </div>
-              </Typography>
-            </Toolbar>
+        <Typography variant="h5" to="/" className={classes.logo}>
+          Navbar
+        </Typography>
+
+        {isMobile ? (
+          <DrawerComponent />
+        ) : (
+          <div className={classes.navlinks}>
+            <Link to="/" className={classes.link}>
+              Home
+            </Link>
+            <Link to="/about" className={classes.link}>
+              About
+            </Link>
+            <Link to="/projects" className={classes.link}>
+              Projects
+            </Link>
+            <Link to="/contact" className={classes.link}>
+              Contact
+            </Link>
+
           </div>
-        </AppBar>
-      </CssBaseline>
-    </>
+        )}
+      </Toolbar>
+    </AppBar>
   );
 }
-
 export default Navbar;

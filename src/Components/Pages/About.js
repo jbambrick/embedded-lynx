@@ -21,7 +21,7 @@ const About = () => {
         scale: 1,
         rotate: 0,
       }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
       className="page"
     >
       <h2>About page works!</h2>
