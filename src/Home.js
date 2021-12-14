@@ -64,8 +64,8 @@ const Home = () => {
           </Card>
           <div className="page">
           <Grid container justifyContent="center">
-      <CardComponent></CardComponent>
-</Grid>
+            <CardComponent></CardComponent>
+          </Grid>
 
             <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
             <p>

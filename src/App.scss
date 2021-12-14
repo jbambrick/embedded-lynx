@@ -197,11 +197,13 @@ justify-content: center;
 }
 
 .cardBlock {
-  margin: 1px;
+  margin: 0px;
   color: rgb(194, 5, 147);
 width: 20vw;
 text-align: center;
 background: black;
 justify-content: center;
+min-height: 100px;
+border-radius: 20px;
 
 }
