@@ -3,6 +3,8 @@ import { Card } from "@mui/material";
 import { Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { Grid } from "@material-ui/core";
+import CardComponent from "./Components/Widgets/CardComponent";
 
 
 
@@ -61,10 +63,9 @@ const Home = () => {
             </div>
           </Card>
           <div className="page">
-            <h2>Dev Toolkit</h2>
-            <ul>ReactJS</ul>
-            <ul>Angular</ul>
-            <ul>HTML, CSS, SCSS</ul>
+          <Grid container justifyContent="center">
+      <CardComponent></CardComponent>
+</Grid>
 
             <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
             <p>

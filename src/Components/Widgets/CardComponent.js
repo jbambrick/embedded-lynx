@@ -7,14 +7,22 @@ import { width } from "@mui/system";
 
 export default function CardComponent() {
     return (
-        <Card style={{ width: '33vw', height: 200 }}>
-            <CardContent>
-                <Typography sx={{fontSize: 14}} color="rgb(194, 5, 147)">
-                    CARD WORKS
-                </Typography>
-            </CardContent>
-        </Card>
+<Typography style={{display: 'inline-flex'}}>
+    <Card variant="outlined">
+        <CardContent className="cardBlock">Angular</CardContent>
+    </Card>
+    <Card>
+        <CardContent className="cardBlock">Angular</CardContent>
+    </Card>
+    <Card>
+        <CardContent className="cardBlock">CSS/SCSS</CardContent>
+    </Card>
+    <Card>
+        <CardContent className="cardBlock">React-Native</CardContent>
+    </Card>
+</Typography>
+    
 
     )
 
-}
+};

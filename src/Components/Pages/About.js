@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import CardComponent from "../Widgets/CardComponent";
+
 
 const About = () => {
   return (
@@ -25,7 +25,6 @@ const About = () => {
       transition={{ duration: 0.5 }}
       className="page"
     >
-      <CardComponent></CardComponent>
       <h2>About page works!</h2>
       <h2>About page works!</h2>
       <h2>About page works!</h2>
