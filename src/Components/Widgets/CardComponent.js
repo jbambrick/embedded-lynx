@@ -10,17 +10,14 @@ import { motion } from "framer-motion";
 export default function CardComponent() {
     return (
 <Typography style={{display: 'inline-flex'}}>
-    <Card variant="outlined" style={{borderRadius: '20px'}}>
+    <Card variant="outlined" style={{borderRadius: '0px'}}>
+        <CardContent className="cardBlock">ReactJS</CardContent>
+    </Card>
+    <Card variant="outlined" style={{borderRadius: '0px'}}>
         <CardContent className="cardBlock">Angular</CardContent>
     </Card>
-    <Card variant="outlined" style={{borderRadius: '20px'}}>
-        <CardContent className="cardBlock">Angular</CardContent>
-    </Card>
-    <Card variant="outlined" style={{borderRadius: '20px'}}>
+    <Card variant="outlined" style={{borderRadius: '0px'}}>
         <CardContent className="cardBlock">CSS/SCSS</CardContent>
-    </Card>
-    <Card variant="outlined" style={{borderRadius: '20px'}}>
-        <CardContent className="cardBlock">React-Native</CardContent>
     </Card>
 </Typography>
     

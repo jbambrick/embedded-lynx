@@ -192,10 +192,8 @@ nav {
 .cardBlock {
   margin: 0px;
   color: rgb(194, 5, 147);
-  width: 20vw;
-  text-align: center;
+  min-width: 25vw;
   background: black;
-  justify-content: center;
   min-height: 100px;
-  border-radius: 20px;
+
 }

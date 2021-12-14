@@ -34,15 +34,17 @@ const useStyles = makeStyles((theme) => ({
 function Navbar() {
   const classes = useStyles();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <AppBar position="sticky" style={{ background: 'rgb(194, 5, 147)'}}>
       <CssBaseline />
       <Toolbar >
 
-        <Typography variant="h5" to="/" className={classes.logo}>
-          Navbar
+        <Typography variant="h5" className={classes.logo}>
+          <Link to="/">
+            NavLogo
+          </Link>
         </Typography>
 
         {isMobile ? (
