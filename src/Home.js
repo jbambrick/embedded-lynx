@@ -2,52 +2,50 @@ import * as React from "react";
 import { Card } from "@mui/material";
 import { Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Grid } from "@material-ui/core";
 import CardComponent from "./Components/Widgets/CardComponent";
 
 
-
 const Home = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.5
+      }
+    }
+  }
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 }
+  }
 
   return (
     <Typography>
-
       <motion.div
-       
-        initial={{
-          x: 0,
-          y: 100,
-          scale: 1,
-          rotate: 0,
-        }}
-        animate={{
-          x: 0,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-        }}
-        exit={{
-          x: 0,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-        }}
-        transition={{ duration: 3 }}
-      >
+        variants={container}
+        initial="hidden"
+        animate="show">
+
         <div className="home">
+
           <Card className="card">
+          <motion variants={item}>
             <div className="backdrop">
               <div className="card-child">
                 <div className="center">
-                <motion.div
+                  <motion.div
                   whileHover={{scale:1.1, }}
                   whileTap={{ scale: 0.95 }}>
-      <h1>
-                    <section >Design. Create. Implement.</section>
-</h1>
-                </motion.div>
-
+                    <h1> 
+    
+                      <section >Design. Create. Implement.</section>
+           
+                    </h1>
+                  </motion.div>
                 <NavLink to="/Contact">
                 <motion.button
                   whileHover={{scale:1.1}}
@@ -62,6 +60,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            </motion>
           </Card>
           <Grid container justifyContent="center">
             <CardComponent></CardComponent>
@@ -201,6 +200,7 @@ const Home = () => {
             </p>
           </div>
         </div>
+
       </motion.div>
 
     </Typography>

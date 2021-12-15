@@ -41,28 +41,10 @@ function Navbar() {
           title="navbar"
           className={navbar ? "navbar active" : "navbar"}
           position="sticky"
-          //sx={{bgcolor: 'rgb(194, 5, 147)'}}
+          sx={{bgcolor: 'black'}}
         >
           <motion.div
-          initial={{
-          x: 200,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-        }} 
-        animate={{
-          x: 0,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-        }}
-        exit={{
-          x: 0,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-        }}
-        transition={{ duration: 1 }}
+
         className="nav-backdrop">
             <Toolbar className="toolbar">
               <Typography
