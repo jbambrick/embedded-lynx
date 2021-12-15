@@ -33,25 +33,25 @@ const Home = () => {
           scale: 1,
           rotate: 0,
         }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 3 }}
       >
         <div className="home">
           <Card className="card">
             <div className="backdrop">
               <div className="card-child">
+                <div className="center">
                 <motion.div
                   whileHover={{scale:1.1, }}
                   whileTap={{ scale: 0.95 }}>
-                  <h1>
-                    <section>Design. Create. Implement.</section>
-                  </h1>
+      <h1>
+                    <section >Design. Create. Implement.</section>
+</h1>
                 </motion.div>
 
                 <NavLink to="/Contact">
                 <motion.button
                   whileHover={{scale:1.1}}
                   whileTap={{ scale: 0.98 }}
-                  className="contactButton"
                   variant="contained"
                   className="contact"
                   style={{ backgroundColor: "rgb(194, 5, 147)", width: '160px',height: '50px', borderRadius: '18px', borderStyle: 'none' }}
@@ -59,13 +59,15 @@ const Home = () => {
                     Contact
                 </motion.button>
                 </NavLink>
+                </div>
               </div>
             </div>
           </Card>
-          <div className="page">
           <Grid container justifyContent="center">
             <CardComponent></CardComponent>
           </Grid>
+          <div className="page">
+
 
             <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
             <p>

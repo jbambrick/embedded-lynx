@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export default function CardComponent() {
     return (
-<Typography style={{display: 'inline-flex'}}>
+<Typography className="block">
     <Card variant="outlined" style={{borderRadius: '0px'}}>
         <CardContent className="cardBlock">ReactJS</CardContent>
     </Card>
@@ -18,6 +18,9 @@ export default function CardComponent() {
     </Card>
     <Card variant="outlined" style={{borderRadius: '0px'}}>
         <CardContent className="cardBlock">CSS/SCSS</CardContent>
+    </Card>
+    <Card variant="outlined" style={{borderRadius: '0px'}}>
+        <CardContent className="cardBlock">Adobe</CardContent>
     </Card>
 </Typography>
     

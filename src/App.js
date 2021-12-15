@@ -1,6 +1,5 @@
 import "./App.css";
 import "./App.scss";
-import Navbar from "./Components/Widgets/Navbar";
 import Home from "./Home";
 import About from "./Components/Pages/About";
 import Links from "./Components/Pages/Links";
@@ -11,6 +10,7 @@ import { Route } from "react-router";
 import TopNav from "./Components/Widgets/Top-Nav";
 import { TransitionGroup } from "react-transition-group";
 import { AnimatePresence, motion } from "framer-motion";
+import Navbar from "./Components/Widgets/Navbar";
 
 function App() {
   return (
@@ -21,7 +21,8 @@ function App() {
       exit={{ opacity: 0 }}
     >
       <TopNav />
-      <Navbar />
+      <Navbar></Navbar>
+  
       <AnimatePresence exitBeforeEnter>
         <main className="main">
           <TransitionGroup>

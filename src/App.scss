@@ -96,17 +96,27 @@ nav {
   padding: 0px;
 }
 
+.navbar {
+  background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+}
+
 .card {
   text-align: center;
   width: 100vw;
   margin: auto;
   height: 60vh;
   position: relative;
-  background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
+  background-image: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
   background-repeat: no-repeat;
- // background-attachment: fixed; this doesn't allow animation to render correctly
- background-size: cover;
- // background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+
+
   h1,
   h2 {
     text-shadow: 1px 5px 5px black;
@@ -172,12 +182,17 @@ nav {
 }
 
   .backdrop {
-    background: linear-gradient(rgba(5, 4, 4, 0.13),rgba(5, 4, 4, 0.33), rgba(5, 4, 4, 0.504), rgba(5, 4, 4, 0.55504), rgba(5, 4, 4, .99));
+    background: linear-gradient(rgba(5, 4, 4, 0.13),rgba(5, 4, 4, 0.33), rgba(5, 4, 4, 0.404), rgba(5, 4, 4, 0.58504), rgba(5, 4, 4, .99));
   }
 
 
 .navbar.active {
   background: black;
+}
+
+.nav-backdrop {
+  -webkit-backdrop-filter: brightness(75%);
+  backdrop-filter: brightness(75%);
 }
 
 .drawer {
@@ -197,3 +212,11 @@ nav {
   min-height: 100px;
 
 }
+
+.TopNav {
+  margin: 0;
+  background: black;
+  padding:0px;
+}
+
+
