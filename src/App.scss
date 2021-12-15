@@ -132,8 +132,6 @@ nav {
 }
 
 .backdrop {
-  -webkit-backdrop-filter: brightness(75%);
-  backdrop-filter: brightness(75%);
   height: 60vh;
   width: 100vw;
   display: block;
@@ -182,22 +180,18 @@ nav {
 }
 
   .backdrop {
-    background: linear-gradient(rgba(5, 4, 4, 0.13),rgba(5, 4, 4, 0.33), rgba(5, 4, 4, 0.404), rgba(5, 4, 4, 0.58504), rgba(5, 4, 4, .99));
+    background: linear-gradient(rgba(5, 4, 4, 0.00),rgba(5, 4, 4, 0.13),rgba(5, 4, 4, 0.33), rgba(5, 4, 4, 0.404), rgba(5, 4, 4, 0.58504), rgba(5, 4, 4, .99));
   }
 
 
 .navbar.active {
   background: rgb(194, 5, 147);
-  .nav-backdrop {
-    -webkit-backdrop-filter: brightness(100%);
-    backdrop-filter: brightness(100%);
+  .navlinks {
+    font-size: 16px;
+    transition: font 1s;
   }
 }
 
-.nav-backdrop {
-  -webkit-backdrop-filter: brightness(75%);
-  backdrop-filter: brightness(75%);
-}
 
 .drawer {
   background: rgba(0, 0, 0, 0.8);
@@ -210,8 +204,8 @@ nav {
 
 .cardBlock {
   margin: 0px;
-  color: rgb(194, 5, 147);
-  min-width: 24.5vw;
+  color: white;
+  min-width: 24vw;
   background: black;
   min-height: 100px;
 
@@ -221,6 +215,10 @@ nav {
   margin: 0;
   background: black;
   padding:0px;
+}
+
+.cardBlock:hover {
+  color: rgb(194, 5, 147);
 }
 
 @media only screen and (max-width: 600px) {
