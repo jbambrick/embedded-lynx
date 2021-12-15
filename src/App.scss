@@ -187,7 +187,11 @@ nav {
 
 
 .navbar.active {
-  background: black;
+  background: rgb(194, 5, 147);
+  .nav-backdrop {
+    -webkit-backdrop-filter: brightness(100%);
+    backdrop-filter: brightness(100%);
+  }
 }
 
 .nav-backdrop {
