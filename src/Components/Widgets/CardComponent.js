@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export default function CardComponent() {
     return (
-<Typography className="block">
+<Typography className="skillCard">
     <Card variant="outlined" style={{borderRadius: '0px'}}>
         <CardContent className="cardBlock">ReactJS</CardContent>
     </Card>
