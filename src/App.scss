@@ -2,7 +2,7 @@
 
 .layout {
   margin: 0px;
-  background: black;
+ // background: rgb(197, 15, 15);
   min-height: 100vh;
   color: white;
   scroll-behavior: smooth;
@@ -13,8 +13,8 @@
 
 .main {
   margin: 0;
-  background: black;
-  min-height: 100%;
+  background: #7b2ff7;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -50,8 +50,12 @@
   text-decoration: none;
 }
 
+#hero {
+    font-size: 3vw;
+}
+
 nav {
-  background: rgb(0, 0, 0);
+  background: #f107a3;
   margin: 0;
   padding-left: 35px;
   padding-top: 5px;
@@ -75,17 +79,17 @@ nav {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(250deg, #7b2ff7, #f107a3);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(194, 5, 147);
+  background: #f107a3;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(194, 5, 147, 0.75);
+  background: #f107a393;
 }
 
 .home {
@@ -97,7 +101,7 @@ nav {
 }
 
 .navbar {
-  background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
+//  background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -110,7 +114,7 @@ nav {
   margin: auto;
   height: 60vh;
   position: relative;
-  background-image: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
+  background:  linear-gradient(250deg, #7b2ff7, #f107a3);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -119,7 +123,6 @@ nav {
 
   h1,
   h2 {
-    text-shadow: 1px 5px 5px black;
     margin: 0;
   }
 
@@ -180,35 +183,31 @@ nav {
 }
 
   .backdrop {
-    background: linear-gradient(rgba(5, 4, 4, 0.00),rgba(5, 4, 4, 0.13),rgba(5, 4, 4, 0.33), rgba(5, 4, 4, 0.404), rgba(5, 4, 4, 0.58504), rgba(5, 4, 4, .99));
+   // background: linear-gradient(rgba(5, 4, 4, 0.00),rgba(5, 4, 4, 0.13),rgba(5, 4, 4, 0.33), rgba(5, 4, 4, 0.404), rgba(5, 4, 4, 0.58504), rgba(5, 4, 4, .99));
   }
 
 
 .navbar.active {
-  background: rgb(194, 5, 147);
+  background: #f107a3;
   .navlinks {
     font-size: 16px;
     transition: font 1s;
   }
 }
 
-
-.drawer {
-  background: rgba(0, 0, 0, 0.8);
-  height: 100vh;
-  width: 200px;
-  * {
-    color: white;
-  }
-}
-
 .cardBlock {
   margin: 0px;
+  font-family: monospace;
+  font-size: 28px;
   color: white;
-  min-width: 24vw;
-  background: black;
-  min-height: 100px;
-
+  min-width: 25vw;
+  background: #7b2ff7;
+  background-image: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
+  background-blend-mode: soft-light;
+  min-height: 200px;
+  max-height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .TopNav {
@@ -218,7 +217,8 @@ nav {
 }
 
 .cardBlock:hover {
-  color: rgb(194, 5, 147);
+ // background: linear-gradient(250deg, #7b2ff7, #f107a3);
+  border-style: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -226,7 +226,28 @@ nav {
     display: block;
     width: 100vw;
   }
+  .cardBlock {
+    width: 100vw;
+  }
+  #hero {
+    font-size: 7vw;
+    width: 100vw;
 }
+.contact {
+  font-size: 6vw;
+}
+}
+
+@media only screen and (max-width: 780px) {
+  #hero {
+    font-size: 7vw;
+    width: 100vw;
+}
+.contact {
+  font-size: 5vw;
+}
+}
+
 @media only screen and (min-width: 600px) {
   .skillCard {
     display: flex;

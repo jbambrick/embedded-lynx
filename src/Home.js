@@ -33,29 +33,71 @@ const Home = () => {
         <div className="home">
 
           <Card className="card">
-          <motion variants={item}>
+          <motion>
             <div className="backdrop">
               <div className="card-child">
                 <div className="center">
                   <motion.div
+                            initial={{
+                              x: 500,
+                              y: 0,
+                              scale: 1,
+                              rotate: 0,
+                            }}
+                            animate={{
+                              x: 0,
+                              y: 0,
+                              scale: 1,
+                              rotate: 0,
+                            }}
+                            exit={{
+                              x: 0,
+                              y: 0,
+                              scale: 1,
+                              rotate: 0,
+                            }}
+                            transition={{ duration: 1 }} >
+                  <motion.div
                   whileHover={{scale:1.1, }}
                   whileTap={{ scale: 0.95 }}>
-                    <h1> 
-    
-                      <section >Design. Create. Implement.</section>
+                    <h1 id="hero"> 
+
+                      <section>Design. Create. Implement.</section>
            
                     </h1>
                   </motion.div>
+                  </motion.div>
                 <NavLink to="/Contact">
+                <motion.div
+                            initial={{
+                              x: -500,
+                              y: 0,
+                              scale: 1,
+                              rotate: 0,
+                            }}
+                            animate={{
+                              x: 0,
+                              y: 0,
+                              scale: 1,
+                              rotate: 0,
+                            }}
+                            exit={{
+                              x: 0,
+                              y: 0,
+                              scale: 1,
+                              rotate: 0,
+                            }}
+                            transition={{ duration: 1 }} >
                 <motion.button
                   whileHover={{scale:1.1}}
                   whileTap={{ scale: 0.98 }}
                   variant="contained"
                   className="contact"
-                  style={{ backgroundColor: "rgb(194, 5, 147)", width: '160px',height: '50px', borderRadius: '18px', borderStyle: 'none' }}
+                  style={{ background: "#f107a3", width: '160px',height: '50px', borderRadius: '18px', borderStyle: 'none' }}
                 >
                     Contact
                 </motion.button>
+                </motion.div>
                 </NavLink>
                 </div>
               </div>
