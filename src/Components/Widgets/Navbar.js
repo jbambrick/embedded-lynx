@@ -45,7 +45,7 @@ function Navbar() {
         >
           <motion.div
           initial={{
-            x: -500,
+            x: 500,
             y: 0,
             scale: 1,
             rotate: 0,
