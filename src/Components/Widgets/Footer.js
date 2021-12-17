@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 function Footer() {
   return (
     <Typography>
-        <div>Footer</div>
+        <div className="footer">© Embedded Lynx 2021</div>
     </Typography>
   );
 }
