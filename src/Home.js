@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Grid } from "@material-ui/core";
 import CardComponent from "./Components/Widgets/CardComponent";
+import Footer from "./Components/Widgets/Footer";
 
 
 const Home = () => {
@@ -198,8 +199,7 @@ const Home = () => {
  
         </div>
 
- 
-      
+      <Footer></Footer>
 
     </Typography>
   );
