@@ -51,7 +51,7 @@
 }
 
 #hero {
-    font-size: 3vw;
+  //  font-size: 3vw;
 }
 
 nav {
@@ -112,7 +112,7 @@ nav {
   text-align: center;
   width: 100vw;
   margin: auto;
-  height: 60vh;
+  height: 57vh;
   position: relative;
   background:  linear-gradient(250deg, #7b2ff7, #f107a3);
   background-repeat: no-repeat;
@@ -145,10 +145,10 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 200px;
   color: rgb(228, 228, 228);
   button {
-    box-shadow: 0px 2px 5px black
+    box-shadow: 0px 2px 5px #7b2ff7;
+    
   };
 }
 
@@ -230,21 +230,21 @@ nav {
     width: 100vw;
   }
   #hero {
-    font-size: 7vw;
+   // font-size: 7vw;
     width: 100vw;
 }
 .contact {
-  font-size: 6vw;
+ // font-size: 6vw;
 }
 }
 
 @media only screen and (max-width: 780px) {
   #hero {
-    font-size: 7vw;
+  //  font-size: 7vw;
     width: 100vw;
 }
 .contact {
-  font-size: 5vw;
+ // font-size: 5vw;
 }
 }
 

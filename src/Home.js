@@ -8,35 +8,15 @@ import CardComponent from "./Components/Widgets/CardComponent";
 
 
 const Home = () => {
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        delayChildren: 0.5
-      }
-    }
-  }
-
-  const item = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 }
-  }
 
   return (
     <Typography>
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate="show">
+  
 
         <div className="home">
-
           <Card className="card">
-          <motion>
-            <div className="backdrop">
               <div className="card-child">
-                <div className="center">
+                <div className="center" style={{ padding: '0px', width:'auto'}}>
                   <motion.div
                               initial={{
                                 opacity: 0
@@ -52,35 +32,56 @@ const Home = () => {
                   whileHover={{scale:1.1, }}
                   whileTap={{ scale: 0.95 }}>
                     <h1 id="hero"> 
-
-                      <section>Design. Create. Implement.</section>
-           
+                      <section>Design. Create. Implement</section>
                     </h1>
-                  </motion.div>
-                 
+              </motion.div>
+                 <div style={{paddingBottom:'20px'}}>
                 <NavLink to="/Contact">
-
-                <motion.button
-                  whileHover={{scale:1.1}}
-                  whileTap={{ scale: 0.98 }}
-                  variant="contained"
-                  className="contact"
-                  style={{ background: "#f107a3", width: '160px',height: '50px', borderRadius: '18px', borderStyle: 'none' }}
-                >
+                  <motion.button
+                    whileHover={{scale:1.1}}
+                    whileTap={{ scale: 0.98 }}
+                    variant="contained"
+                    className="contact"
+                    style={{ background: "#f107a3", width: '160px',height: '50px', borderRadius: '18px', borderStyle: 'none' }}
+                  >
                     Contact
-                </motion.button>
+                  </motion.button>
                 </NavLink>
-                </motion.div>
                 </div>
-              </div>
+              </motion.div>
             </div>
-            </motion>
+          </div>
+      
+
           </Card>
           <Grid container justifyContent="center">
             <CardComponent></CardComponent>
           </Grid>
+
+
           <div className="page">
+            
+            <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
 
+            <h1>testing</h1>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
 
             <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
             <p>
@@ -192,30 +193,13 @@ const Home = () => {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
-            <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-            <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+          
           </div>
+ 
         </div>
 
-      </motion.div>
+ 
+      
 
     </Typography>
   );

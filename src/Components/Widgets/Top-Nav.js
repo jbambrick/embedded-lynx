@@ -9,7 +9,7 @@ function TopNav() {
       <AppBar className="TopNav" position="sticky">
         <nav>
           <motion.div           initial={{
-          x: 1200,
+          x: -100,
           y: 0,
           scale: 1,
           rotate: 0,
