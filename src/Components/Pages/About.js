@@ -182,8 +182,6 @@ const About = () => {
  
         </div>
 
- 
-      
 
     </Typography>
   );

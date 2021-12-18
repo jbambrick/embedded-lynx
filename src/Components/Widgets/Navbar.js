@@ -41,7 +41,7 @@ function Navbar() {
           title="navbar"
           className={navbar ? "navbar active" : "navbar"}
           position="sticky"
-          sx={{bgcolor: '#7b2ff7'}}
+          sx={{bgcolor: '#7b2ff7', boxShadow:'1px 2px 1px #f107a3)'}}
         >
           <motion.div
           initial={{
