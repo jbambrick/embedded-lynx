@@ -2,12 +2,14 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
+import {Nav} from  "./TopNav.styles";
+
 
 function TopNav() {
   return (
     <Typography>
       <AppBar className="TopNav" position="sticky">
-        <nav>
+        <Nav>
           <motion.div           initial={{
           x: -100,
           y: 0,
@@ -27,7 +29,7 @@ function TopNav() {
           rotate: 0,
         }}
         transition={{ duration: 1 }}>© Embedded Lynx 2021</motion.div>
-        </nav>
+        </Nav>
       </AppBar>
     </Typography>
   );

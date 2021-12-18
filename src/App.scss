@@ -54,19 +54,6 @@
   //  font-size: 3vw;
 }
 
-nav {
-  background: #f107a3;
-  margin: 0;
-  padding-left: 35px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: arial;
-  font-size: 14px;
-
-  &.active{
-    position: relative;
-  }
-}
 
 .buttons {
   display: inline-block;
@@ -210,11 +197,11 @@ nav {
   background-repeat: no-repeat;
 }
 
-.TopNav {
-  margin: 0;
-  background: black;
-  padding:0px;
-}
+//.TopNav {
+//  margin: 0;
+//  background: black;
+//  padding:0px;
+//}
 
 .cardBlock:hover {
  // background: linear-gradient(250deg, #7b2ff7, #f107a3);
