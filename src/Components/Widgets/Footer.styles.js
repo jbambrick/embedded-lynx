@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Title = styled.div`
-    background:  linear-gradient(250deg, #d5bdfc, #ffbee9);
-    color: #7b2ff7;
+    background:  #f107a3;
+    color: #FFFF;
     min-height: 120px;
     text-align: center;
     padding: 12px;

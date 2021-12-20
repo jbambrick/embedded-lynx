@@ -66,7 +66,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: linear-gradient(250deg, #7b2ff7, #f107a3);
+  background: linear-gradient(250deg, #f107a3, #7b2ff7);
 }
 
 /* Handle */
@@ -81,18 +81,6 @@
 
 .home {
   margin: auto;
-}
-
-.navbar {
-  padding: 0px;
-}
-
-.navbar {
-//  background: url(https://justinbambrick.ca/wp-content/uploads/2021/12/received_645258989822718-3.jpeg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
 }
 
 .card {
@@ -139,14 +127,7 @@
   };
 }
 
-.logo {
-  color: white;
-}
 
-.logo.actives {
-  color: fuchsia;
-  transition: 2s ease;
-}
 
 .container {
   margin: auto 0;
@@ -241,3 +222,11 @@
   }
 }
 
+.logo {
+  color: rgb(0, 255, 34);
+}
+
+.logo.actives {
+  color: fuchsia;
+  transition: 2s ease;
+}
